@@ -7,6 +7,8 @@ INJECTED from E:\programs\Android Studio\ucsi\open_market\android\app\src\main\A
 MERGED from E:\programs\Android Studio\ucsi\open_market\android\app\src\main\AndroidManifest.xml:1:1-41:12
 MERGED from [:firebase_auth] E:\programs\Android Studio\ucsi\open_market\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
 MERGED from [:firebase_core] E:\programs\Android Studio\ucsi\open_market\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:image_picker] E:\programs\Android Studio\ucsi\open_market\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-19:12
+MERGED from [:flutter_plugin_android_lifecycle] E:\programs\Android Studio\ucsi\open_market\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:shared_preferences] E:\programs\Android Studio\ucsi\open_market\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:google_sign_in] E:\programs\Android Studio\ucsi\open_market\build\google_sign_in\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:paytm_allinonesdk] E:\programs\Android Studio\ucsi\open_market\build\paytm_allinonesdk\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
@@ -14,6 +16,7 @@ MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Ajay\.gradle\caches\tran
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Ajay\.gradle\caches\transforms-2\files-2.1\eb7b2dfa8adc5a64ecda1dc0da4e6c8c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:17:1-83:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Ajay\.gradle\caches\transforms-2\files-2.1\fbe8f494895e74e43126254521b40c02\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Ajay\.gradle\caches\transforms-2\files-2.1\99bd01539d3b3ee061b37d94e6c346f9\jetified-firebase-common-20.0.0\AndroidManifest.xml:15:1-40:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.0] C:\Users\Ajay\.gradle\caches\transforms-2\files-2.1\ef3e70141ce80265c385477b65c4f7e8\exifinterface-1.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.paytm.appinvokesdk:appinvokesdk:1.5.4] C:\Users\Ajay\.gradle\caches\transforms-2\files-2.1\2820d682859c39f4cf565268495e7aeb\appinvokesdk-1.5.4\AndroidManifest.xml:2:1-27:12
 MERGED from [com.paytm.easypay:easypay:8.7.3-appinvoke-4] C:\Users\Ajay\.gradle\caches\transforms-2\files-2.1\718a0efb5d780289c7472b2b1a2e2f25\jetified-easypay-8.7.3-appinvoke-4\AndroidManifest.xml:2:1-27:12
 MERGED from [com.google.android.gms:play-services-auth:18.1.0] C:\Users\Ajay\.gradle\caches\transforms-2\files-2.1\815d1d69b08a601a3ba0ba450a13b0d6\play-services-auth-18.1.0\AndroidManifest.xml:17:1-40:12
@@ -84,6 +87,8 @@ MERGED from [:firebase_auth] E:\programs\Android Studio\ucsi\open_market\build\f
 MERGED from [:firebase_auth] E:\programs\Android Studio\ucsi\open_market\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] E:\programs\Android Studio\ucsi\open_market\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] E:\programs\Android Studio\ucsi\open_market\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:image_picker] E:\programs\Android Studio\ucsi\open_market\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-17:19
+MERGED from [:image_picker] E:\programs\Android Studio\ucsi\open_market\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-17:19
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Ajay\.gradle\caches\transforms-2\files-2.1\eb7b2dfa8adc5a64ecda1dc0da4e6c8c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:26:5-81:19
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Ajay\.gradle\caches\transforms-2\files-2.1\eb7b2dfa8adc5a64ecda1dc0da4e6c8c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:26:5-81:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Ajay\.gradle\caches\transforms-2\files-2.1\fbe8f494895e74e43126254521b40c02\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
@@ -168,6 +173,10 @@ MERGED from [:firebase_auth] E:\programs\Android Studio\ucsi\open_market\build\f
 MERGED from [:firebase_auth] E:\programs\Android Studio\ucsi\open_market\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] E:\programs\Android Studio\ucsi\open_market\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] E:\programs\Android Studio\ucsi\open_market\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] E:\programs\Android Studio\ucsi\open_market\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] E:\programs\Android Studio\ucsi\open_market\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] E:\programs\Android Studio\ucsi\open_market\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] E:\programs\Android Studio\ucsi\open_market\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:shared_preferences] E:\programs\Android Studio\ucsi\open_market\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:shared_preferences] E:\programs\Android Studio\ucsi\open_market\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:google_sign_in] E:\programs\Android Studio\ucsi\open_market\build\google_sign_in\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
@@ -182,6 +191,8 @@ MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Ajay\.gr
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Ajay\.gradle\caches\transforms-2\files-2.1\fbe8f494895e74e43126254521b40c02\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Ajay\.gradle\caches\transforms-2\files-2.1\99bd01539d3b3ee061b37d94e6c346f9\jetified-firebase-common-20.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Ajay\.gradle\caches\transforms-2\files-2.1\99bd01539d3b3ee061b37d94e6c346f9\jetified-firebase-common-20.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.0] C:\Users\Ajay\.gradle\caches\transforms-2\files-2.1\ef3e70141ce80265c385477b65c4f7e8\exifinterface-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.0] C:\Users\Ajay\.gradle\caches\transforms-2\files-2.1\ef3e70141ce80265c385477b65c4f7e8\exifinterface-1.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.paytm.appinvokesdk:appinvokesdk:1.5.4] C:\Users\Ajay\.gradle\caches\transforms-2\files-2.1\2820d682859c39f4cf565268495e7aeb\appinvokesdk-1.5.4\AndroidManifest.xml:7:5-44
 MERGED from [com.paytm.appinvokesdk:appinvokesdk:1.5.4] C:\Users\Ajay\.gradle\caches\transforms-2\files-2.1\2820d682859c39f4cf565268495e7aeb\appinvokesdk-1.5.4\AndroidManifest.xml:7:5-44
 MERGED from [com.paytm.easypay:easypay:8.7.3-appinvoke-4] C:\Users\Ajay\.gradle\caches\transforms-2\files-2.1\718a0efb5d780289c7472b2b1a2e2f25\jetified-easypay-8.7.3-appinvoke-4\AndroidManifest.xml:5:5-7:41
@@ -320,6 +331,22 @@ ADDED from [:firebase_core] E:\programs\Android Studio\ucsi\open_market\build\fi
 		ADDED from [:firebase_core] E:\programs\Android Studio\ucsi\open_market\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 	android:name
 		ADDED from [:firebase_core] E:\programs\Android Studio\ucsi\open_market\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
+ADDED from [:image_picker] E:\programs\Android Studio\ucsi\open_market\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20
+	android:grantUriPermissions
+		ADDED from [:image_picker] E:\programs\Android Studio\ucsi\open_market\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-47
+	android:authorities
+		ADDED from [:image_picker] E:\programs\Android Studio\ucsi\open_market\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-74
+	android:exported
+		ADDED from [:image_picker] E:\programs\Android Studio\ucsi\open_market\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [:image_picker] E:\programs\Android Studio\ucsi\open_market\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-82
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:image_picker] E:\programs\Android Studio\ucsi\open_market\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:75
+	android:resource
+		ADDED from [:image_picker] E:\programs\Android Studio\ucsi\open_market\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-72
+	android:name
+		ADDED from [:image_picker] E:\programs\Android Studio\ucsi\open_market\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\Ajay\.gradle\caches\transforms-2\files-2.1\eb7b2dfa8adc5a64ecda1dc0da4e6c8c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:24:5-79
 MERGED from [com.paytm.appinvokesdk:appinvokesdk:1.5.4] C:\Users\Ajay\.gradle\caches\transforms-2\files-2.1\2820d682859c39f4cf565268495e7aeb\appinvokesdk-1.5.4\AndroidManifest.xml:9:5-79

@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:open_market/SaleApp/Models/ProductModel.dart';
+import 'package:open_market/SaleApp/Screens/AddProduct.dart';
 import 'package:paytm_allinonesdk/paytm_allinonesdk.dart';
 import 'package:smooth_star_rating/smooth_star_rating.dart';
 
@@ -60,12 +61,13 @@ class _ProductState extends State<Product> {
                 },
               ),
               ListTile(
-                title: Text('Wishlist'),
+                title: Text('Add Product'),
                 onTap: () {
                   // Update the state of the app
                   // ...
                   // Then close the drawer
-                  Navigator.pop(context);
+                  Navigator.push(context,MaterialPageRoute(builder: (context) => AddProduct()));
+                  // Navigator.pop(context);
                 },
               ),
               ListTile(

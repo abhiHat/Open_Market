@@ -30,6 +30,9 @@ dependencies:
   firebase_auth: 2.0.0
   shared_preferences: any
   paytm_allinonesdk: ^1.1.0
+  image_picker: ^0.8.1+4
+  toast: ^0.1.5
+  date_time_picker: ^2.1.0
 
 dev_dependencies:
   flutter_test:

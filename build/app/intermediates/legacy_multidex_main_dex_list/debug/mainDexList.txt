@@ -121,6 +121,8 @@ androidx/databinding/InverseBindingMethods.class
 androidx/databinding/InverseMethod.class
 androidx/databinding/Untaggable.class
 androidx/databinding/ViewDataBinding$OnStartListener.class
+androidx/exifinterface/media/ExifInterface$ExifStreamType.class
+androidx/exifinterface/media/ExifInterface$IfdType.class
 androidx/lifecycle/Lifecycle$Event.class
 androidx/lifecycle/LifecycleObserver.class
 androidx/lifecycle/OnLifecycleEvent.class

@@ -5,6 +5,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lite_rolling_switch/lite_rolling_switch.dart';
 import 'package:open_market/RentApp/Screens/RentHome.dart';
+import 'package:open_market/SaleApp/Screens/AddProduct.dart';
 import 'package:open_market/SaleApp/Screens/ProductList.dart';
 import 'package:open_market/SaleApp/Services/loadCats.dart';
 
@@ -65,12 +66,13 @@ class _SaleHomeState extends State<SaleHome> {
                 },
               ),
               ListTile(
-                title: Text('Wishlist'),
+                title: Text('Add Product'),
                 onTap: () {
                   // Update the state of the app
                   // ...
                   // Then close the drawer
-                  Navigator.pop(context);
+                  Navigator.push(context,MaterialPageRoute(builder: (context) => AddProduct()));
+                  // Navigator.pop(context);
                 },
               ),
               ListTile(
