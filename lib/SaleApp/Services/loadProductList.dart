@@ -3,15 +3,15 @@ import 'package:http/http.dart' as http;
 import 'package:open_market/AuthApp/Models/UserModel.dart';
 import 'package:open_market/SaleApp/Models/ProductModel.dart';
 
-Future<List<ProductModel>> loadProductList(int id) async {
+Future<List<ProductSModel>> loadProductList(int id) async {
 
-  var res = await http.get(Uri.parse("http://192.168.43.175:8000/ci/om/public/productr/${id}"));
+  var res = await http.get(Uri.parse("http://192.168.43.175:8000/ci/om/public/products/${id}"));
   // http://localhost:8000/ci/om/public/
   var output = json.decode(res.body);
 
   // print(output);
   // print(res.statusCode);
-  List<ProductModel> cats = [];
+  List<ProductSModel> cats = [];
 
 
 
@@ -55,18 +55,18 @@ Future<List<ProductModel>> loadProductList(int id) async {
 
       // print(im);
 
-      ProductModel cts = ProductModel(
-          int.parse(c['pr_id']),
-          c['pr_name'],
-          c['pr_buy_price'],
-          c['pr_rent_price'],
-          int.parse(c['pr_cat']),
-          int.parse(c['pr_subcat']),
-          c['pr_buy_date'],
-          c['pr_desc'],
+      ProductSModel cts = ProductSModel(
+          int.parse(c['product_id']),
+          c['product_name'],
+          c['product_buy_price'],
+          c['product_sell_price'],
+          int.parse(c['product_cat']),
+          int.parse(c['product_subcat']),
+          c['product_buy_date'],
+          c['product_desc'],
           c['created_at'],
           int.parse(c['user_id']),
-          c['is_rented'],
+          c['is_saled'],
           im
       );
       cats.add(cts);

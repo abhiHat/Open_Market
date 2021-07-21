@@ -1,4 +1,7 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:open_market/AuthApp/Screens/user_info.dart';
 import 'package:open_market/SaleApp/Screens/SaleHome.dart';
 import 'package:splashscreen/splashscreen.dart';
 
@@ -24,6 +27,30 @@ class AppStart extends StatefulWidget {
 }
 
 class _AppStartState extends State<AppStart> {
+
+  @override
+  void initState() {
+      super.initState();
+      Firebase.initializeApp().whenComplete((){
+        print("Firebase initialized....!!");
+
+        // User user = FirebaseAuth.instance.currentUser;
+        // if(user != null){
+        //   Navigator.of(context).pushReplacement(
+        //     MaterialPageRoute(builder: (context) => UserInfoScreen(
+        //       user: user,
+        //     ))
+        //   );
+        // }
+        //
+
+        setState(() {
+
+        });
+      });
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

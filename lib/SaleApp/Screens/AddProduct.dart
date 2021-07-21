@@ -80,18 +80,18 @@ class _AddProductState extends State<AddProduct> {
 
   uploadProduct(File img) async{
 
-    var request = http.MultipartRequest('POST', Uri.parse("http://192.168.43.175:8000/ci/om/public/productupload"));
+    var request = http.MultipartRequest('POST', Uri.parse("http://192.168.43.175:8000/ci/om/public/productsellupload"));
 
-    request.fields['pr_name'] = nameCtrl.text;
-    request.fields['pr_buy_price'] = bpriceCtrl.text;
-    request.fields['pr_rent_price'] = espriceCtrl.text;
-    request.fields['pr_cat'] = catId.toString();
-    request.fields['pr_subcat'] = subcatId.toString();
-    request.fields['pr_buy_date'] = bdateCtrl.text;
-    request.fields['pr_desc'] = desctrl.text;
+    request.fields['product_name'] = nameCtrl.text;
+    request.fields['product_buy_price'] = bpriceCtrl.text;
+    request.fields['product_sell_price'] = espriceCtrl.text;
+    request.fields['product_cat'] = catId.toString();
+    request.fields['product_subcat'] = subcatId.toString();
+    request.fields['product_buy_date'] = bdateCtrl.text;
+    request.fields['product_desc'] = desctrl.text;
     request.fields['created_at'] = DateTime.now().toString();
     request.fields['user_id'] = '1';
-    request.fields['is_rented'] = '${false}';
+    request.fields['is_saled'] = '${false}';
 
     request.files.add(
         await http.MultipartFile.fromPath(

@@ -513,6 +513,7 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="default_web_client_id" translatable="false">186324644139-hh56cctlp5taien1ucj1dfen5sa8murd.apps.googleusercontent.com</string>
     <string name="do_not_send_otp"> I will Use IPIN</string>
     <string name="dummy">Redirecting you to  payment  page.</string>
     <string name="easypay_config_endpoint">http://10.0.28.74:8080/MerchantSite/db.json</string>
@@ -527,6 +528,11 @@
     <string name="enter_one_time_password">Enter One Time Password (OTP)</string>
     <string name="enter_otp">Enter OTP</string>
     <string name="fast_and_secure">Fast &amp; Secure Payments</string>
+    <string name="gcm_defaultSenderId" translatable="false">186324644139</string>
+    <string name="google_api_key" translatable="false">AIzaSyDMysPZrHZdqW5MJWD0w7a_Odauy-BRweo</string>
+    <string name="google_app_id" translatable="false">1:186324644139:android:5cb43442a1d30b4a66556e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDMysPZrHZdqW5MJWD0w7a_Odauy-BRweo</string>
+    <string name="google_storage_bucket" translatable="false">open-market-847eb.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hide">Hide</string>
     <string name="message_detected">OTP detected, press submit to continue</string>
@@ -539,6 +545,7 @@
     <string name="password_text">Password</string>
     <string name="preferred_options">Please select your preferred option</string>
     <string name="processing">Processing</string>
+    <string name="project_id" translatable="false">open-market-847eb</string>
     <string name="redirect_text">Redirecting you to Payment page.</string>
     <string name="rember">Remember this User ID</string>
     <string name="reset_password_text">Reset Password</string>

@@ -1277,6 +1277,7 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string default_web_client_id
 string do_not_send_otp
 string dummy
 string easypay_config_endpoint
@@ -1291,6 +1292,11 @@ string easypay_submit
 string enter_one_time_password
 string enter_otp
 string fast_and_secure
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string hello_blank_fragment
 string hide
 string message_detected
@@ -1303,6 +1309,7 @@ string otp_detected
 string password_text
 string preferred_options
 string processing
+string project_id
 string redirect_text
 string rember
 string reset_password_text

@@ -1,5 +1,7 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:open_market/AuthApp/Screens/login.dart';
 import 'package:open_market/SaleApp/Screens/AddProduct.dart';
 import 'package:open_market/SaleApp/Screens/Product.dart';
 import 'package:open_market/SaleApp/Services/loadProductList.dart';
@@ -15,6 +17,7 @@ class ProductList extends StatefulWidget {
 class _ProductListState extends State<ProductList> {
 
   var scaffoldKey = GlobalKey<ScaffoldState>();
+  User user = FirebaseAuth.instance.currentUser;
 
 
 
@@ -29,7 +32,12 @@ class _ProductListState extends State<ProductList> {
           padding: EdgeInsets.zero,
           children: <Widget>[
             DrawerHeader(
-              child: Center(child: Text('Home')),
+              child: Center(child: Column(
+                children: [
+                  Text('Welcome '),
+                  Text(user != null ? user.displayName.toString() : " ")
+                ],
+              )),
               decoration: BoxDecoration(
                   color: Colors.cyan[400]
               ),
@@ -110,13 +118,13 @@ class _ProductListState extends State<ProductList> {
               },
             ),
             ListTile(
-              title: Text('Contact Us!'),
+              title: Text('My Account'),
               onTap: () {
                 // Update the state of the app
                 // ...
                 // Then close the drawer
-                Navigator.pop(context);
-                // Navigator.push(context,MaterialPageRoute(builder: (context) => Login() ));
+                // Navigator.pop(context);
+                Navigator.push(context,MaterialPageRoute(builder: (context) => Login() ));
               },
             ),
           ],
@@ -208,10 +216,10 @@ class _ProductListState extends State<ProductList> {
                       itemCount: snapshot.data.length,
                       itemBuilder: (BuildContext context, int index){
 
-                        var prId = snapshot.data[index].pr_id;
-                        var prName = snapshot.data[index].pr_name;
-                        var prBPrice = snapshot.data[index].pr_buy_price;
-                        var prSPrice = snapshot.data[index].pr_rent_price;
+                        var prId = snapshot.data[index].product_id;
+                        var prName = snapshot.data[index].product_name;
+                        var prBPrice = snapshot.data[index].product_buy_price;
+                        var prSPrice = snapshot.data[index].product_sale_price;
                         var primgs = snapshot.data[index].imgs;
 
 

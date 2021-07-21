@@ -1,7 +1,9 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:open_market/AuthApp/Screens/login.dart';
 import 'package:open_market/SaleApp/Models/ProductModel.dart';
 import 'package:open_market/SaleApp/Screens/AddProduct.dart';
 import 'package:paytm_allinonesdk/paytm_allinonesdk.dart';
@@ -9,7 +11,7 @@ import 'package:smooth_star_rating/smooth_star_rating.dart';
 
 class Product extends StatefulWidget {
 
-  final ProductModel pr;
+  final ProductSModel pr;
   const Product({Key key, @required this.pr}) : super(key: key);
 
   @override
@@ -19,13 +21,14 @@ class Product extends StatefulWidget {
 class _ProductState extends State<Product> {
 
   var scaffoldKey = GlobalKey<ScaffoldState>();
+  User user = FirebaseAuth.instance.currentUser;
 
 
 
   @override
   Widget build(BuildContext context) {
 
-    DateTime dob = DateTime.parse(widget.pr.buy_date);
+    DateTime dob = DateTime.parse(widget.pr.product_buy_date);
     Duration dur =DateTime.now().difference(dob);
 
 
@@ -37,7 +40,12 @@ class _ProductState extends State<Product> {
             padding: EdgeInsets.zero,
             children: <Widget>[
               DrawerHeader(
-                child: Center(child: Text('Home')),
+                child: Center(child: Column(
+          children: [
+          Text('Welcome '),
+          Text(user != null ? user.displayName.toString() : " ")
+          ],
+        )),
                 decoration: BoxDecoration(
                     color: Colors.cyan[400]
                 ),
@@ -118,13 +126,13 @@ class _ProductState extends State<Product> {
                 },
               ),
               ListTile(
-                title: Text('Contact Us!'),
+                title: Text('My Account'),
                 onTap: () {
                   // Update the state of the app
                   // ...
                   // Then close the drawer
-                  Navigator.pop(context);
-                  // Navigator.push(context,MaterialPageRoute(builder: (context) => Login() ));
+                  // Navigator.pop(context);
+                  Navigator.push(context,MaterialPageRoute(builder: (context) => Login() ));
                 },
               ),
             ],
@@ -202,7 +210,7 @@ class _ProductState extends State<Product> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
-                        Text(widget.pr.pr_name, style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold, color: Colors.blue[700])),
+                        Text(widget.pr.product_name, style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold, color: Colors.blue[700])),
                         SmoothStarRating(
                           rating: 4,
                           isReadOnly: true,
@@ -275,7 +283,7 @@ class _ProductState extends State<Product> {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: <Widget>[
-                                Text('₹ ${widget.pr.pr_rent_price}', style: TextStyle(fontSize: 20, color: Colors.orange[900], fontWeight: FontWeight.bold),)
+                                Text('₹ ${widget.pr.product_sale_price}', style: TextStyle(fontSize: 20, color: Colors.orange[900], fontWeight: FontWeight.bold),)
                               ],
                             ),
                           ]
@@ -290,10 +298,10 @@ class _ProductState extends State<Product> {
                         children: <Widget>[
                           Text('About This Product', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black),),
                           SizedBox(height: 10,),
-                          Text('Buy Date: ${widget.pr.buy_date}',style: TextStyle(fontSize: 16, color: Colors.black)),
-                          Text('Availability: ${int.parse(widget.pr.is_rented) == 0  ? "No" : "Yes"}',style: TextStyle(fontSize: 16, color: Colors.black)),
+                          Text('Buy Date: ${widget.pr.product_buy_date}',style: TextStyle(fontSize: 16, color: Colors.black)),
+                          Text('Availability: ${int.parse(widget.pr.is_saled) == 0  ? "No" : "Yes"}',style: TextStyle(fontSize: 16, color: Colors.black)),
                           Text('This product is ${dur.inDays.toString()} days old',style: TextStyle(fontSize: 16, color: Colors.black)),
-                          Text('Description by Owner: ${widget.pr.desc}',style: TextStyle(fontSize: 16, color: Colors.black)),
+                          Text('Description by Owner: ${widget.pr.product_desc}',style: TextStyle(fontSize: 16, color: Colors.black)),
                         ],
                       ),
                     ),
@@ -345,7 +353,7 @@ class _ProductState extends State<Product> {
                           var result;
                           var oid = "${widget.pr.user_id}_${DateTime.now().year}_${DateTime.now().month}_${DateTime.now().day}";
                           var response = AllInOneSdk.startTransaction(
-                              'rgsMrt00166034088192', '${oid}', '${widget.pr.pr_rent_price}', '10OXH8oKYOyTqrpM', null, false, true);
+                              'rgsMrt00166034088192', '${oid}', '${widget.pr.product_sale_price}', '10OXH8oKYOyTqrpM', null, false, true);
                           response.then((value) {
                             print(value);
                             setState(() {

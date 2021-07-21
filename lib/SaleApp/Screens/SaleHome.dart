@@ -1,9 +1,9 @@
-import 'dart:math';
-
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lite_rolling_switch/lite_rolling_switch.dart';
+import 'package:open_market/AuthApp/Screens/login.dart';
 import 'package:open_market/RentApp/Screens/RentHome.dart';
 import 'package:open_market/SaleApp/Screens/AddProduct.dart';
 import 'package:open_market/SaleApp/Screens/ProductList.dart';
@@ -27,6 +27,8 @@ class _SaleHomeState extends State<SaleHome> {
     'assets/images/banner/b3.jpg'
   ];
 
+  User user = FirebaseAuth.instance.currentUser;
+
 
   void loadProductList(int id){
 
@@ -42,7 +44,12 @@ class _SaleHomeState extends State<SaleHome> {
             padding: EdgeInsets.zero,
             children: <Widget>[
               DrawerHeader(
-                child: Center(child: Text('Home')),
+                child: Center(child: Column(
+                  children: [
+                    Text('Welcome '),
+                    Text(user != null ? user.displayName.toString() : " ")
+                  ],
+                )),
                 decoration: BoxDecoration(
                     color: Colors.cyan[400]
                 ),
@@ -123,13 +130,13 @@ class _SaleHomeState extends State<SaleHome> {
                 },
               ),
               ListTile(
-                title: Text('Contact Us!'),
+                title: Text('My Account'),
                 onTap: () {
                   // Update the state of the app
                   // ...
                   // Then close the drawer
-                  Navigator.pop(context);
-                  // Navigator.push(context,MaterialPageRoute(builder: (context) => Login() ));
+                  // Navigator.pop(context);
+                  Navigator.push(context,MaterialPageRoute(builder: (context) => Login() ));
                 },
               ),
             ],
