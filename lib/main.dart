@@ -42,7 +42,6 @@ class _AppStartState extends State<AppStart> {
         //     ))
         //   );
         // }
-        //
 
         setState(() {
 

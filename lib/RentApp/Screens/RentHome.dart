@@ -7,8 +7,8 @@ import 'package:open_market/AuthApp/Screens/login.dart';
 import 'package:open_market/SaleApp/Screens/SaleHome.dart';
 import 'package:open_market/SaleApp/Services/loadCats.dart';
 
-import 'AddProduct.dart';
-import 'ProductList.dart';
+import 'package:open_market/RentApp/Screens/AddProduct.dart';
+import 'package:open_market/RentApp/Screens/ProductList.dart';
 
 class RentHome extends StatefulWidget {
   const RentHome({Key key}) : super(key: key);

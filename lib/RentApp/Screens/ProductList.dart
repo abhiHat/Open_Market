@@ -155,7 +155,7 @@ class _ProductListState extends State<ProductList> {
                             Text(
                               "Open",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),
                             ),
-                            Text(" Market (Buy)", style: TextStyle(fontSize: 20),)
+                            Text(" Market (Rent )", style: TextStyle(fontSize: 20),)
                           ],
                         ),
                         Padding(

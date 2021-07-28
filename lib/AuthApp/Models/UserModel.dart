@@ -24,5 +24,4 @@ class UserModel{
       this.created_at,
       this.modified_at
       );
-
 }
